@@ -1,0 +1,50 @@
+<font>
+	<info face="myFont" size="150" />
+	<common lineHeight="150" scaleW="153" scaleH="156" pages="1" />
+	<!-- <common lineHeight="80" scaleW="153" scaleH="156" pages="1" /> -->
+	<pages>
+		<page id="0" file="myFont-export.png" />
+	</pages>
+	<chars count="38">
+		<char id="48" x="26" y="0" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 0 -->
+		<char id="49" x="130" y="104" width="22" height="25" xoffset="0" yoffset="55" xadvance="23" /><!-- 1 -->
+		<char id="50" x="52" y="104" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 2 -->
+		<char id="51" x="104" y="130" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 3 -->
+		<char id="52" x="104" y="52" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 4 -->
+		<char id="53" x="104" y="104" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 5 -->
+		<char id="54" x="104" y="78" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 6 -->
+		<char id="55" x="104" y="26" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 7 -->
+		<char id="56" x="78" y="78" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 8 -->
+		<char id="57" x="104" y="0" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- 9 -->
+		<char id="65" x="78" y="52" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- A -->
+		<char id="66" x="52" y="130" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- B -->
+		<char id="67" x="78" y="130" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- C -->
+		<char id="68" x="78" y="104" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- D -->
+		<char id="69" x="130" y="52" width="22" height="25" xoffset="0" yoffset="55" xadvance="23" /><!-- E -->
+		<char id="70" x="52" y="52" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- F -->
+		<char id="71" x="78" y="26" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- G -->
+		<char id="72" x="78" y="0" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- H -->
+		<char id="73" x="130" y="130" width="22" height="25" xoffset="0" yoffset="55" xadvance="23" /><!-- I -->
+		<char id="74" x="0" y="26" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- J -->
+		<char id="75" x="52" y="78" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- K -->
+		<char id="76" x="130" y="26" width="22" height="25" xoffset="0" yoffset="55" xadvance="23" /><!-- L -->
+		<char id="77" x="52" y="26" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- M -->
+		<char id="78" x="52" y="0" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- N -->
+		<char id="79" x="26" y="130" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- O -->
+		<char id="80" x="26" y="104" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- P -->
+		<char id="81" x="26" y="78" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- Q -->
+		<char id="82" x="26" y="52" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- R -->
+		<char id="83" x="26" y="26" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- S -->
+		<char id="84" x="130" y="78" width="22" height="25" xoffset="0" yoffset="55" xadvance="23" /><!-- T -->
+		<char id="85" x="0" y="130" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- U -->
+		<char id="86" x="0" y="104" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- V -->
+		<char id="87" x="0" y="78" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- W -->
+		<char id="88" x="0" y="52" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- X -->
+		<char id="89" x="130" y="0" width="22" height="25" xoffset="0" yoffset="55" xadvance="23" /><!-- Y -->
+		<char id="90" x="0" y="0" width="25" height="25" xoffset="0" yoffset="55" xadvance="26" /><!-- Z -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>
