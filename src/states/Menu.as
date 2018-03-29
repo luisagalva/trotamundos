@@ -77,8 +77,9 @@ package states
   		 addChild(tt);
 		 
 		
-		 //creamos la instancia de GameBg
+		 //creamos la instancia de Mochilero
   		mochilero = new Mochilero();
+		 
   		 //agregamos el objeto al display list
   		 addChild(mochilero);
 		 

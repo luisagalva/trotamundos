@@ -11,39 +11,51 @@ package objects
    import starling.events.Event;
    import starling.textures.Texture;
    
+   import starling.core.Starling;
+   
 	public class Mochilero extends Sprite
 	{
-		private var bg2:Image;
-		public var mochilero:Texture = Assets.atlas_texture.getTexture("mochilero.png");
-	 
+		private var mochilero:Image;
+		public var _width:Number;
+		public var _height:Number;
+		public var _xPos:Number;
+		public var _yPos:Number;
   	 
-  	 public function Mochilero()
+  	 public function Mochilero(_widthRatio:Number = 1, _heightRatio:Number = 1, _xPos:Number = 40, _yPos:Number = 290)//pasamos una referencia a la interfaz play
   	 {
-  		 addEventListener(Event.ADDED_TO_STAGE, init);
+  		/* addEventListener(Event.ADDED_TO_STAGE, init);*/
+		
+		//creamos la nueva imagen y tomamos la textura de la clase assets que creamos
+  		  //Imagen de mochilero
+		 mochilero = new Image( Assets.atlas_texture.getTexture("mochilero.png"));
+		 
+		 //Tamaño
+		 mochilero.height = 334 * _heightRatio;
+		 mochilero.width = 265 * _widthRatio;
+		 
+		 //Lo posicionamos
+		 mochilero.x = _xPos;
+		 mochilero.y = _yPos;
+		 
+		 mochilero.pivotX = mochilero.width * 0.5;
+  		 mochilero.pivotY = mochilero.height * 0.5;
+		 addChild(mochilero);
   		 
   	 }
   	 
   	 private function init(e:Event):void
   	 {
   		 removeEventListener(Event.ADDED_TO_STAGE, init);
-  		 //creamos la nueva imagen y tomamos la texturade la clase assets que creamos
-  		  //Imagen de mochilero
-		 bg2 = new Image(mochilero);
-		 bg2.y = 270;
-		 bg2.height = 334;
-		 bg2.width = 265;
-		 addChild(bg2);
+  		 
 		 
 		 
   	 }
 	 
-	 public function walk(bg_speed:int = 1):void {
-		 
-		
-  		 
-  		 
+	
+	 public  function update():void {
+  		 //accedemos al layer nativo de flash para usar eventos de ratón
+			
   	 }
-  	 
   	
   	 
 		

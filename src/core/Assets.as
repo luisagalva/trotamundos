@@ -20,6 +20,9 @@ package core
   	 private static var background_aeropuerto:Class;
   	 public static var aeropuerto_texture:Texture;
   	 
+	 [Embed (source = "../../assets/graphics/paris.png")]
+  	 private static var background_paris:Class;
+  	 public static var paris_texture:Texture;
   	 
   	 //ahora el texture atlas
   	 //primero la textura
@@ -44,8 +47,9 @@ package core
   	 public static function init():void
   	 {
   		
-		  //Mi textura de fondo
+		  //Mis texturas de fondos
   		aeropuerto_texture = Texture.fromBitmap(new background_aeropuerto());
+		paris_texture = Texture.fromBitmap(new background_paris());
 		 
   		 //instanciamos el texture atlas, asegúrate de cerrar todos los paréntesis
   		 atlas_texture = new TextureAtlas(Texture.fromBitmap(new atlas), XML(new atlasXML()));
