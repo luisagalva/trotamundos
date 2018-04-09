@@ -5,6 +5,7 @@ package core
    import starling.textures.TextureAtlas;
    import starling.text.BitmapFont;
    import starling.text.TextField;
+   import flash.media.Sound;
    /**
     * ...
     * @author ...
@@ -44,6 +45,11 @@ package core
   	 [Embed (source = "../../assets/graphics/myFont-export.fnt", mimeType = "application/octet-stream")]
   	 private static var myFontXML:Class;
 	 
+	 //Agregamos la música del juego
+  	 [Embed (source = "../../assets/sound_fx/parisSound.mp3")]
+  	 private static var MusicSound:Class;
+  	 public static var music_sound:Sound;
+	 
   	 public static function init():void
   	 {
   		
@@ -57,6 +63,9 @@ package core
 		 //registremos el nuevo bitmap font
 		 
 		 TextField.registerBitmapFont(new BitmapFont(Texture.fromBitmap(new myFont()), XML(new myFontXML())), "myFont");
+		 
+		 //primero la música
+  		 music_sound = new MusicSound();
   		 
   	 }
   	 

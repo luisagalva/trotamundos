@@ -14,6 +14,7 @@ package states
 	import starling.textures.Texture;
 	import starling.animation.Tween;
 	import starling.animation.Transitions;
+	import flash.display.Stage;
 	
 	
 	
@@ -26,7 +27,7 @@ package states
 		private var game:Game;
 		private var game_background:GameBg;
 		private var start_button:Button;
-		private var mochilero:Mochilero;
+		private var mochilero:Image;
 		private var plane:Image;
 		
 		
@@ -78,8 +79,13 @@ package states
 		 
 		
 		 //creamos la instancia de Mochilero
-  		mochilero = new Mochilero();
+  		mochilero = new Image( Assets.atlas_texture.getTexture("mochilero.png"));
+		 mochilero.height = 340 ;
+		 mochilero.width = 265 ;
 		 
+		 //Lo posicionamos
+		 mochilero.x = 40;
+		 mochilero.y = 290;
   		 //agregamos el objeto al display list
   		 addChild(mochilero);
 		 

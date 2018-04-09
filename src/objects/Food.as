@@ -36,7 +36,7 @@ package objects
   		 
   	 }
   	 
-  	public function Update()
+  	public function Update():void
 	 {
 		 
 	 }

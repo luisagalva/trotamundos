@@ -10,6 +10,7 @@ package objects
    import starling.display.Stage;
    import starling.events.Event;
    import starling.textures.Texture;
+   import states.Play;
    
    import starling.core.Starling;
    
@@ -20,18 +21,17 @@ package objects
 		public var _height:Number;
 		public var _xPos:Number;
 		public var _yPos:Number;
+		private var playNow:Play;
   	 
-  	 public function Mochilero(_widthRatio:Number = 1, _heightRatio:Number = 1, _xPos:Number = 40, _yPos:Number = 290)//pasamos una referencia a la interfaz play
+  	 public function Mochilero( playNow:Play, _xPos:Number = 40, _yPos:Number = 290)//pasamos una referencia a la interfaz play
   	 {
   		/* addEventListener(Event.ADDED_TO_STAGE, init);*/
-		
+		 this.playNow = playNow;
 		//creamos la nueva imagen y tomamos la textura de la clase assets que creamos
   		  //Imagen de mochilero
 		 mochilero = new Image( Assets.atlas_texture.getTexture("mochilero.png"));
 		 
-		 //Tamaño
-		 mochilero.height = 334 * _heightRatio;
-		 mochilero.width = 265 * _widthRatio;
+		
 		 
 		 //Lo posicionamos
 		 mochilero.x = _xPos;

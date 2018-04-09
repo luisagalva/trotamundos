@@ -4,10 +4,12 @@
 	Created with ShoeBox
 	http://renderhjs.net/shoebox/
 	-->
-	<SubTexture name="baguette.png"	x="0"	y="951"	width="53"	height="64" frameX="-0" frameY="-0" frameWidth="53" frameHeight="64"/>
-	<SubTexture name="croissant.png"	x="54"	y="951"	width="52"	height="45" frameX="-1" frameY="-2" frameWidth="54" frameHeight="48"/>
-	<SubTexture name="mochilero.png"	x="0"	y="0"	width="476"	height="636" frameX="-43" frameY="-5" frameWidth="531" frameHeight="669"/>
-	<SubTexture name="plane.png"	x="0"	y="637"	width="474"	height="172" frameX="-19" frameY="-170" frameWidth="512" frameHeight="512"/>
-	<SubTexture name="start1.png"	x="317"	y="810"	width="316"	height="140" frameX="-0" frameY="-0" frameWidth="316" frameHeight="140"/>
-	<SubTexture name="start2.png"	x="0"	y="810"	width="316"	height="140" frameX="-0" frameY="-0" frameWidth="316" frameHeight="140"/>
+	<SubTexture name="baguette.png"	x="100"	y="793"	width="53"	height="64" frameX="-0" frameY="-0" frameWidth="53" frameHeight="64"/>
+	<SubTexture name="croissant.png"	x="100"	y="858"	width="52"	height="45" frameX="-1" frameY="-2" frameWidth="54" frameHeight="48"/>
+	<SubTexture name="enemy1.png"	x="0"	y="793"	width="99"	height="230" frameX="-16" frameY="-0" frameWidth="130" frameHeight="230"/>
+	<SubTexture name="enemy2.png"	x="0"	y="455"	width="130"	height="168" frameX="-0" frameY="-31" frameWidth="130" frameHeight="230"/>
+	<SubTexture name="mochilero.png"	x="0"	y="624"	width="127"	height="168" frameX="-11" frameY="-33" frameWidth="140" frameHeight="240"/>
+	<SubTexture name="plane.png"	x="0"	y="0"	width="474"	height="172" frameX="-19" frameY="-170" frameWidth="512" frameHeight="512"/>
+	<SubTexture name="start1.png"	x="0"	y="173"	width="316"	height="140" frameX="-0" frameY="-0" frameWidth="316" frameHeight="140"/>
+	<SubTexture name="start2.png"	x="0"	y="314"	width="316"	height="140" frameX="-0" frameY="-0" frameWidth="316" frameHeight="140"/>
 </TextureAtlas>
