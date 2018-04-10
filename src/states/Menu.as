@@ -15,6 +15,8 @@ package states
 	import starling.animation.Tween;
 	import starling.animation.Transitions;
 	import flash.display.Stage;
+	import flash.media.SoundChannel;
+   import flash.events.MouseEvent;
 	
 	
 	
@@ -27,9 +29,10 @@ package states
 		private var game:Game;
 		private var game_background:GameBg;
 		private var start_button:Button;
+		private var credits_button:Button;
 		private var mochilero:Image;
 		private var plane:Image;
-		
+		private var myChannel:SoundChannel = new SoundChannel();
 		
 		public function Menu(game:Game) 
 		{
@@ -44,6 +47,7 @@ package states
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 		Assets.init();
 		
+		myChannel = Assets.airplane_sound.play(0, 9999);
 		//creamos la instancia de GameBg para el fondo
   		 game_background = new GameBg();
   		game_background.myTexture = Assets.aeropuerto_texture;
@@ -66,6 +70,16 @@ package states
 		start_button.textFormat.color = 0xD0D7E1;
 		start_button.textFormat.size = 350;
 		 addChild(start_button);
+		 
+		  //Botón para ir a los creditos
+  		 credits_button = new Button(Assets.atlas_texture.getTexture("start1.png"), "CREDITS", Assets.atlas_texture.getTexture("start2.png"));
+  		 credits_button.x = stage.stageWidth -100;
+		credits_button.height = 60;
+		credits_button.width = 100;
+		credits_button.textFormat.font = "myFont";
+		credits_button.textFormat.color = 0xD0D7E1;
+		credits_button.textFormat.size = 50;
+		 addChild(credits_button);
 		 
 		  //Titulo del juego
   		 var tt:TextField = new TextField(600, 230, "TROTAMUNDOS");
@@ -95,12 +109,17 @@ package states
 		 
 		 
 		 start_button.addEventListener(Event.TRIGGERED, playMe);
+		 credits_button.addEventListener(Event.TRIGGERED, creditMe);
 		 
 		}
 		
 		 private function playMe(e:Event):void
   	 {
   		 game.changeState(Game.PLAY_STATE);
+  	 }
+		 private function creditMe(e:Event):void
+  	 {
+  		 game.changeState(Game.CREDITS);
   	 }
 		
 		
@@ -114,6 +133,7 @@ package states
 		
 		public function destroy():void 
 		{
+			myChannel.stop;
 			 removeFromParent(true);
 		}
 		

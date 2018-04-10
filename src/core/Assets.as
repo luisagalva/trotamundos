@@ -50,6 +50,14 @@ package core
   	 private static var MusicSound:Class;
   	 public static var music_sound:Sound;
 	 
+	 [Embed (source = "../../assets/sound_fx/airplane.mp3")]
+  	 private static var AirplaneSound:Class;
+  	 public static var airplane_sound:Sound;
+	 
+	 [Embed (source = "../../assets/sound_fx/techno.mp3")]
+  	 private static var TechnoSound:Class;
+  	 public static var techno_sound:Sound;
+	 
   	 public static function init():void
   	 {
   		
@@ -66,6 +74,8 @@ package core
 		 
 		 //primero la música
   		 music_sound = new MusicSound();
+		 airplane_sound = new AirplaneSound();
+		 techno_sound = new TechnoSound();
   		 
   	 }
   	 

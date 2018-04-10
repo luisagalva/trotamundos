@@ -8,6 +8,7 @@ package core
     import states.GameOver;
     import states.Menu;
     import states.Play;
+	import states.Credits;
 	import starling.display.Image;
 	import starling.text.*;
 
@@ -21,6 +22,7 @@ package core
         public static const MENU_STATE:int = 0;
         public static const PLAY_STATE:int = 1;
         public static const GAME_OVER_STATE:int = 2;
+		public static const CREDITS:int = 3;
         
         private var current_state:IState;
         
@@ -85,6 +87,10 @@ package core
 
 				case GAME_OVER_STATE:
  					current_state = new GameOver(this);
+				break;
+				
+				case CREDITS:
+ 					current_state = new Credits(this);
 				break;
 			}
 			//finalmente agregamos la pantalla adecuada al display list,asegurate de pasarlo en un contenedor Sprite, a esta tecnica se le conoce como “cast as”
