@@ -26,7 +26,7 @@ package states
 	import objects.Mochilero;
 	import objects.Food;
 	import objects.Score;
-	
+
 	
 	/**
 	 * ...
@@ -47,12 +47,12 @@ package states
 		 public var bool_fire:Boolean = false;
 		private var myChannel:SoundChannel = new SoundChannel();
 		
-		private var native_stage:Stage;
-		//Actividad 9 Crear 50 objetos, puede ser el mismo objeto, en la pantalla de juego. 
+		private var native_stage:Stage; 
 		public var posy_food:int = 100;
 	    public var counter_x:int = 100;
 		public var food:Food;
 		private var counter:int = 0;
+		
 	
 		
 		public function Play(game:Game) 
@@ -147,6 +147,10 @@ package states
 		
 		public function destroy():void 
 		{
+			
+		 //detenemos la musica
+  		 myChannel.stop();
+		 
 		//primero desactivamos los eventos de raton 
 		native_stage.removeEventListener(TouchEvent.TOUCH, mouse_down);
 		native_stage.removeEventListener(TouchEvent.TOUCH, mouse_up);
@@ -155,11 +159,11 @@ package states
   		 ammo_manager.destroy();
   		 enemy_manager.destroy();
 		 
+		
   		 //eliminamos este estado de juego
   		 removeFromParent(true);
   		 
-  		 //detenemos la musica
-  		 myChannel.stop();
+  		 
 		}
 		
 	}

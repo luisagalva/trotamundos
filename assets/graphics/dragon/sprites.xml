@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="sprites.png">
+	<!--
+	Created with ShoeBox
+	http://renderhjs.net/shoebox/
+	-->
+	<SubTexture name="dragon_1.png"	x="67"	y="44"	width="53"	height="49" frameX="-10" frameY="-15" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_attack_001.png"	x="67"	y="94"	width="53"	height="49" frameX="-10" frameY="-16" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_attack_002.png"	x="67"	y="0"	width="65"	height="43" frameX="-10" frameY="-22" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_attack_003.png"	x="0"	y="193"	width="66"	height="37" frameX="-10" frameY="-28" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_die_001.png"	x="67"	y="144"	width="50"	height="49" frameX="-14" frameY="-15" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_die_002.png"	x="67"	y="194"	width="49"	height="49" frameX="-13" frameY="-15" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_die_003.png"	x="0"	y="171"	width="66"	height="21" frameX="-10" frameY="-46" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_die_004.png"	x="0"	y="149"	width="66"	height="21" frameX="-10" frameY="-45" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_die_005.png"	x="0"	y="171"	width="66"	height="21" frameX="-10" frameY="-46" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_fly_001.png"	x="0"	y="104"	width="66"	height="44" frameX="-10" frameY="-18" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_fly_002.png"	x="0"	y="68"	width="66"	height="35" frameX="-10" frameY="-28" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_fly_003.png"	x="0"	y="34"	width="66"	height="33" frameX="-10" frameY="-27" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_fly_004.png"	x="0"	y="0"	width="66"	height="33" frameX="-10" frameY="-28" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_hit_001.png"	x="67"	y="144"	width="50"	height="49" frameX="-14" frameY="-15" frameWidth="80" frameHeight="80"/>
+	<SubTexture name="dragon_1_hit_002.png"	x="67"	y="194"	width="49"	height="49" frameX="-13" frameY="-15" frameWidth="80" frameHeight="80"/>
+</TextureAtlas>

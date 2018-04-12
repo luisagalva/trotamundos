@@ -10,8 +10,9 @@ package states
 	import starling.events.Event;
 	import flash.display.Stage;
 	import starling.display.Sprite;
-		import flash.media.SoundChannel;
+	import flash.media.SoundChannel;
    import flash.events.MouseEvent;
+  
 	
 	/**
 	 * ...
@@ -26,6 +27,7 @@ package states
 		public  var matricula:TextField;
 		private var myChannel:SoundChannel = new SoundChannel();
 		
+		
 		public function Credits(game:Game) 
 		{
 			this.game = game;
@@ -38,6 +40,7 @@ package states
 		
 		removeEventListener(Event.ADDED_TO_STAGE, init);
 		Assets.init();
+		
 		
 		 myChannel = Assets.techno_sound.play(0, 9999);
 		 
@@ -75,6 +78,7 @@ package states
 		menu_button.textFormat.color = 0xD0D7E1;
 		menu_button.textFormat.size = 50;
 		 addChild(menu_button);
+		  
 		 
 		 menu_button.addEventListener(Event.TRIGGERED, menuMe);
 		

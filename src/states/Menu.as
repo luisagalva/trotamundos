@@ -17,6 +17,7 @@ package states
 	import flash.display.Stage;
 	import flash.media.SoundChannel;
    import flash.events.MouseEvent;
+   import objects.Dragon;
 	
 	
 	
@@ -33,6 +34,8 @@ package states
 		private var mochilero:Image;
 		private var plane:Image;
 		private var myChannel:SoundChannel = new SoundChannel();
+		//Actividad 12 dragon
+		private var dragon:Dragon;
 		
 		public function Menu(game:Game) 
 		{
@@ -103,6 +106,12 @@ package states
   		 //agregamos el objeto al display list
   		 addChild(mochilero);
 		 
+		 //Act 12 creamos al dragón
+  		 dragon = new Dragon(Assets.atlas_texture_dragon.getTextures("dragon_1_fly_"), 12);
+  		 dragon.x = 400;
+  		 dragon.y = 100;
+  		 Starling.juggler.add(dragon);
+  		 addChild(dragon);
 		 
 		 //tween para aimar el avion
 		 Starling.juggler.tween(plane, 3, {transition:Transitions.EASE_IN, y: -100, x:800, repeatCount: 10000*1000});
@@ -133,7 +142,7 @@ package states
 		
 		public function destroy():void 
 		{
-			myChannel.stop;
+			myChannel.stop();
 			 removeFromParent(true);
 		}
 		

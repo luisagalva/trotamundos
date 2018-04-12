@@ -8,13 +8,22 @@ package core
    import flash.media.Sound;
    /**
     * ...
-    * @author ...
+    * @author LuisaGarciaAlva
     */
    public class Assets
    {
 	   
-	  // [Embed(source = "/../assets/graphics/ship_01.png")]
-	  // public static const Ship1:Class;
+	  //texure atlas del dragon
+	   //primero la textura
+  	 [Embed (source = "../../assets/graphics/dragon/sprites.png")]
+  	 private static var atlasDragon:Class;
+  	 //declaramos que la textura será tipo texture atlas
+  	 public static var atlas_texture_dragon:TextureAtlas;
+	 
+  	 //ahora el XML para poder localizar las imágenes
+  	 [Embed (source = "../../assets/graphics/dragon/sprites.xml", mimeType = "application/octet-stream")]
+  	 //y la variable para poder manejarlo
+  	 private static var atlasDragonXML:Class;
 	   
   	 //primero las texturas que  serán usadas como los fondos del juego
   	 [Embed (source = "../../assets/graphics/aeropuerto.png")]
@@ -36,7 +45,7 @@ package core
   	 [Embed (source = "../../assets/graphics/sprites.xml", mimeType = "application/octet-stream")]
   	 //y la variable para poder manejarlo
   	 private static var atlasXML:Class;
-  	 
+	 
 	 
 	  //sigue el bitmap font
   	 [Embed (source = "../../assets/graphics/myFont-export.png")]
@@ -68,11 +77,14 @@ package core
   		 //instanciamos el texture atlas, asegúrate de cerrar todos los paréntesis
   		 atlas_texture = new TextureAtlas(Texture.fromBitmap(new atlas), XML(new atlasXML()));
 		 
+		 //iniciamos el texture atlas del dragón
+		 atlas_texture_dragon = new TextureAtlas(Texture.fromBitmap(new atlasDragon), XML(new atlasDragonXML()));
+		 
 		 //registremos el nuevo bitmap font
 		 
 		 TextField.registerBitmapFont(new BitmapFont(Texture.fromBitmap(new myFont()), XML(new myFontXML())), "myFont");
 		 
-		 //primero la música
+		 // la música
   		 music_sound = new MusicSound();
 		 airplane_sound = new AirplaneSound();
 		 techno_sound = new TechnoSound();
